@@ -55,7 +55,7 @@ public class MulteDao {
 		StringBuilder sql = new StringBuilder();
 		
 		sql.append("SELECT ID, NOME, COGNOME, TARGA, VARCO, IDVARCO");
-		sql.append(" FROM DOCUMENTO");
+		sql.append(" FROM LISTAMULTE");
 				
 		Connection connection = null;
 		PreparedStatement pstm = null;

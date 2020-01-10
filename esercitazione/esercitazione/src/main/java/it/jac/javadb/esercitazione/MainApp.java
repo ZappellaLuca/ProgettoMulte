@@ -23,7 +23,7 @@ public class MainApp {
 
 			stampaMenu();
 			System.out.print("Scegliere la funzione: ");
-
+			new Finestra();
 			Scanner in = new Scanner(System.in);
 			String s = in.nextLine();
 
@@ -44,13 +44,13 @@ public class MainApp {
 			}
 			case "3": {
 				//inserimento dati nel db
-				Multe doc = new Multe();
+				Multe multa = new Multe();
 				/*inserisco dati a caso
 				doc.setId("1");
 				doc.setNome("nome");
 				doc.setCognome("cognome");
 				*/
-				service.creaDocumento(doc);
+				service.creaDocumento(multa);
 				
 				break;
 			}
