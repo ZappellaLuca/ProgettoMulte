@@ -1,0 +1,5 @@
+CREATE TABLE `lista_varchi` (
+  `idvarchi` int(11) NOT NULL,
+  `nomevarco` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`idvarchi`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
