@@ -1,0 +1,15 @@
+package main;
+
+public class Varco {
+ String indirizzo;
+
+public Varco(String indirizzo) {
+	super();
+	this.indirizzo = indirizzo;
+}
+ @Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return indirizzo;
+	}
+}

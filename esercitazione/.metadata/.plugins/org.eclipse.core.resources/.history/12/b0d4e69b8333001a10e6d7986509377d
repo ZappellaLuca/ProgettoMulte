@@ -1,0 +1,88 @@
+package it.jac.javadb.esercitazione;
+
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import it.jac.javadb.esercitazione.entity.Documento;
+import it.jac.javadb.esercitazione.service.DocumentoService;
+import it.jac.javadb.esercitazione.util.Utils;
+
+public class MainApp {
+	
+	private static final Logger log = LogManager.getLogger(MainApp.class);
+
+	public static void main(String[] args) {
+
+		log.info("App Started");
+
+		do {
+
+			stampaMenu();
+			System.out.print("Scegliere la funzione: ");
+
+			Scanner in = new Scanner(System.in);
+			String s = in.nextLine();
+
+			DocumentoService service = new DocumentoService();
+			
+			switch (s) {
+			case "1": {
+
+				service.testConnessione();
+				break;
+			}
+			case "2": {
+
+				List<Documento> list = service.findAll();
+				Utils.stampaLista(list);
+				
+				break;
+			}
+			case "3": {
+				//inserimento dati nel db
+				Documento doc = new Documento();
+				doc.setId("1");
+				doc.setNome("desc doc 1");
+				doc.setCognome("tipo1");
+				
+				service.creaDocumento(doc);
+				
+				break;
+			}
+			case "4": {
+
+				Documento doc = new Documento();
+				doc.setId(1);
+				
+				service.eliminaDocumento(doc);
+				
+				break;
+			}
+			case "5": {
+
+				break;
+			}
+			default: {
+
+				log.info("Scelta non gestita, l'applicazione termina");
+				return;
+			}
+			}
+
+		} while (true);
+
+	}
+
+	private static void stampaMenu() {
+
+		log.info("1) Test Connessione");
+		log.info("2) Stampa lista varchi");
+		log.info("3) Crea documento (Hibernate)");
+		log.info("Altro) Esci");
+	}
+
+}

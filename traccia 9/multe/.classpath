@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="D:/Users/lillo/Desktop/pdfbox-2.0.18.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Users/lillo/Desktop/fontbox-2.0.18.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Users/lillo/Desktop/pdfbox-debugger-2.0.18.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Users/lillo/Desktop/pdfbox-tools-2.0.18.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Users/lillo/Desktop/preflight-2.0.18.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Users/lillo/Desktop/xmpbox-2.0.18.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Users/lillo/Desktop/pdfbox-app-2.0.18.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

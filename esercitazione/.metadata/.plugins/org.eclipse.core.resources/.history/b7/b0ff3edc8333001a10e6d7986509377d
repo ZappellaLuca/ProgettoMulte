@@ -1,0 +1,44 @@
+package it.jac.javadb.esercitazione.service;
+
+import java.util.Date;
+import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import it.jac.javadb.esercitazione.dao.MulteDao;
+import it.jac.javadb.esercitazione.entity.Documento;
+
+public class DocumentoService {
+
+	private static final Logger log = LogManager.getLogger(DocumentoService.class);
+
+	private MulteDao dao = new MulteDao();
+	
+	public void testConnessione() {
+		
+		log.info("Test connessione");
+		
+		boolean test = dao.testConnessione();
+		if (test) {
+		
+			log.info("Test avvenuto con successo");
+		}
+		
+	}
+	
+	public List<Documento> findAll() {
+		
+		return this.dao.findAll();
+	}
+	
+	public void creaDocumento(Documento doc) {
+			
+		dao.creaDocumento(doc);
+	}
+	
+	public void eliminaDocumento(Documento doc) {
+		
+		dao.eliminaDocumento(doc);
+	}
+}
