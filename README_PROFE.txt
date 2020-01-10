@@ -1,6 +1,6 @@
 Gruppo: Zappella Luca, Livrieri Lorenzo e Savoldelli Dylan
 
-N.B. Savoldelli Dylan ha lavorato con Zappella Luca quindi non sarà presente alcuna modifica su GITHUB
+N.B. Savoldelli Dylan ha lavorato con Zappella Luca quindi non sarà presente alcuna modifica su GITHUB a nome di Savoldeli Dylan
 
 LINK: https://github.com/ZappellaLuca/ProgettoMulte/upload/master
 
