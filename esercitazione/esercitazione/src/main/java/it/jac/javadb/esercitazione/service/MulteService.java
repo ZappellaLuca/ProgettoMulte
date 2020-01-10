@@ -31,13 +31,13 @@ public class MulteService {
 		return this.dao.findAll();
 	}
 	
-	public void creaDocumento(Multe doc) {
+	public void creaDocumento(Multe multa) {
 			
-		dao.creaDocumento(doc);
+		dao.creaDocumento(multa);
 	}
 	
-	public void eliminaDocumento(Multe doc) {
+	public void eliminaDocumento(Multe multa) {
 		
-		dao.eliminaDocumento(doc);
+		dao.eliminaDocumento(multa);
 	}
 }

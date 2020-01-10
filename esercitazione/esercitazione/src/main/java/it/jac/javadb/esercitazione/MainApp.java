@@ -17,7 +17,7 @@ public class MainApp {
 
 	public static void main(String[] args) {
 
-		log.info("App Started");
+		log.info("Appplicazione avviata");
 
 		do {
 
@@ -40,24 +40,21 @@ public class MainApp {
 				break;
 			}
 			case "3": {
-				//inserimento dati nel db
+				/*inserimento dati nel db
 				Multe multa = new Multe();
-				/*inserisco dati a caso
-				doc.setId("1");
-				doc.setNome("nome");
-				doc.setCognome("cognome");
-				*/
-				service.creaDocumento(multa);
 				
+				multa.setId(1);
+				multa.setNome("nome");
+				multa.setCognome("cognome");
+				multa.setTarga("targa");
+				multa.setIdVarco(55);
+				service.creaDocumento(multa);
+				*/
 				break;
 			}
 			case "4": {
 
-				Multe doc = new Multe();
-				doc.setId(1);
-				
-				service.eliminaDocumento(doc);
-				
+	
 				break;
 			}
 			case "5": {

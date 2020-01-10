@@ -115,25 +115,25 @@ public class MulteDao {
 		
 	}
 
-	public void creaDocumento(Multe doc) {
+	public void creaDocumento(Multe multa) {
 		
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			
 			Transaction tx = session.beginTransaction();
 			
-			session.persist(doc);
+			session.persist(multa);
 			
 			tx.commit();
 		}
 	}
 	
-	public void eliminaDocumento(Multe doc) {
+	public void eliminaDocumento(Multe multa) {
 		
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			
 			Transaction tx = session.beginTransaction();
 			
-			session.delete(doc);
+			session.delete(multa);
 			
 			tx.commit();
 		}

@@ -55,13 +55,17 @@ public class Multa {
 		document.save(System.getProperty("user.home") +"/Desktop/multa_"+numero+"_"+nome+"_"+cognome+"_"+oggi.getDate()+"_"+(oggi.getMonth()+1)+"_"+(""+oggi.getYear()).substring(1)+".pdf");
 		System.out.println("PDF creato ");
 		document.close();
-		/*
+		
 		Multe multa = new Multe();
 		multa.setNome(nome);
 		multa.setCognome(cognome);
-		multa.setIdVarco(idvarco);
 		multa.setTarga(targa);
+		multa.setIdVarco(idvarco);
+		
+		
+
+	
 		service.creaDocumento(multa);
-		*/
+	
 	}
 }
