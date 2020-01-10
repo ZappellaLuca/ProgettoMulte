@@ -30,12 +30,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/zappe/Desktop/librerie/fontbox-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zappe/Desktop/librerie/pdfbox-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zappe/Desktop/librerie/pdfbox-app-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zappe/Desktop/librerie/pdfbox-debugger-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zappe/Desktop/librerie/pdfbox-tools-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zappe/Desktop/librerie/preflight-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zappe/Desktop/librerie/xmpbox-2.0.18.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

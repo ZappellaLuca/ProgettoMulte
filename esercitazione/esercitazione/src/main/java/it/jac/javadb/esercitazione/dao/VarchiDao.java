@@ -12,9 +12,10 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import it.jac.javadb.esercitazione.entity.Multe;
+import it.jac.javadb.esercitazione.entity.Varchi;
 import it.jac.javadb.esercitazione.util.HibernateUtil;
 
-public class MulteDao {
+public class VarchiDao {
 
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
 
@@ -48,14 +49,14 @@ public class MulteDao {
 		return false;
 	}
 
-	public List<Multe> findAll() {
+	public List<Varchi> findAll() {
 
-		List<Multe> result = new ArrayList<>();
+		List<Varchi> result = new ArrayList<>();
 
 		StringBuilder sql = new StringBuilder();
 
-		sql.append("SELECT ID, NOME, COGNOME, TARGA, VARCO, IDVARCO");
-		sql.append(" FROM LISTAMULTE");
+		sql.append("SELECT IDVARCHI,NOMEVARCO");
+		sql.append(" FROM LISTA_VARCHI");
 
 		Connection connection = null;
 		PreparedStatement pstm = null;
@@ -70,13 +71,10 @@ public class MulteDao {
 
 			while (rs.next()) {
 
-				Multe item = new Multe();
+				Varchi item = new Varchi();
 
-				item.setId(rs.getInt("ID"));
-				item.setNome(rs.getString("NOME"));
-				item.setCognome(rs.getString("COGNOME"));
-				item.setTarga(rs.getString("TARGA"));
-				item.setIdVarco(rs.getInt("IDVARCO"));
+				item.setId(rs.getInt("IDVARCHI"));
+				item.setNomevarco(rs.getString("NOMEVARCO"));
 
 				result.add(item);
 			}
@@ -115,25 +113,25 @@ public class MulteDao {
 
 	}
 
-	public void creaDocumento(Multe multa) {
+	public void creaDocumento(Varchi varco) {
 
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 
 			Transaction tx = session.beginTransaction();
 
-			session.persist(multa);
+			session.persist(varco);
 
 			tx.commit();
 		}
 	}
 
-	public void eliminaDocumento(Multe multa) {
+	public void eliminaDocumento(Varchi varco) {
 
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 
 			Transaction tx = session.beginTransaction();
 
-			session.delete(multa);
+			session.delete(varco);
 
 			tx.commit();
 		}

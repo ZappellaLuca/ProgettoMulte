@@ -1,6 +1,5 @@
 package it.jac.javadb.esercitazione.entity;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,10 +27,7 @@ public class Multe {
 
 	@Column(name = "idvarco")
 	private int idvarco;
-	
-	
-	
-	
+
 	public int getId() {
 		return id;
 	}
@@ -40,7 +36,6 @@ public class Multe {
 		this.id = id;
 	}
 
-	
 	public String getNome() {
 		return nome;
 	}
@@ -49,7 +44,6 @@ public class Multe {
 		this.nome = nome;
 	}
 
-	
 	public String getCognome() {
 		return cognome;
 	}
@@ -58,7 +52,6 @@ public class Multe {
 		this.cognome = cognome;
 	}
 
-	
 	public String getTarga() {
 		return targa;
 	}
@@ -67,7 +60,6 @@ public class Multe {
 		this.targa = targa;
 	}
 
-
 	public int getIdVarco() {
 		return idvarco;
 	}
@@ -75,12 +67,10 @@ public class Multe {
 	public void setIdVarco(int idvarco) {
 		this.idvarco = idvarco;
 	}
-	
-/*
-	@Override
-	public String toString() {
-		return "Documento [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", targa=" + targa
-				+ ", idVarco=" + idvarco  + "]";
-	}
-*/
+
+	/*
+	 * @Override public String toString() { return "Documento [id=" + id + ", nome="
+	 * + nome + ", cognome=" + cognome + ", targa=" + targa + ", idVarco=" + idvarco
+	 * + "]"; }
+	 */
 }

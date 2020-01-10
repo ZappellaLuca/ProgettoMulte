@@ -1,12 +1,12 @@
 package pattern;
 
-
 public class Contatore_multa {
 
 	private static volatile Contatore_multa instance = null;
 	long numero;
+
 	Contatore_multa() {
-		numero=0;
+		numero = 0;
 	}
 
 	public static Contatore_multa getInstance() {

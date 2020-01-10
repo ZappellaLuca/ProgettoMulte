@@ -13,31 +13,32 @@ public class MulteService {
 	private static final Logger log = LogManager.getLogger(MulteService.class);
 
 	private MulteDao dao = new MulteDao();
-	
+
 	public void testConnessione() {
-		
+
 		log.info("Test connessione");
-		
+
 		boolean test = dao.testConnessione();
 		if (test) {
-		
+
 			log.info("Test avvenuto con successo");
 		}
-		
+
 	}
-	
+
 	public List<Multe> findAll() {
-		
+
 		return this.dao.findAll();
 	}
-	
+
 	public void creaDocumento(Multe multa) {
-			
+
 		dao.creaDocumento(multa);
 	}
-	
+
 	public void eliminaDocumento(Multe multa) {
-		
+
 		dao.eliminaDocumento(multa);
 	}
+
 }
