@@ -36,9 +36,6 @@ public class MainApp {
 				break;
 			}
 			case "2": {
-
-				List<Multe> list = service.findAll();
-				Utils.stampaLista(list);
 				
 				break;
 			}

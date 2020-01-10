@@ -11,7 +11,7 @@ import it.jac.javadb.esercitazione.entity.Multe;
 
 public class Utils {
 
-	private static final Logger log = LogManager.getLogger(Utils.class);
+	/*private static final Logger log = LogManager.getLogger(Utils.class);
 	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	public static void stampaLista(List<Multe> list) {
@@ -27,11 +27,11 @@ public class Utils {
 			.append(StringUtils.rightPad(bean.getCognome(), 45)).append("|")
 			.append(StringUtils.rightPad(bean.getCognome(), 45)).append("|");
 			sb.append("\n");
-			*/
+			
 		}
 		sb.append("-----------------------------------------------------------");	
 		log.info(sb.toString());
 		
-	}
+	}*/
 
 }
