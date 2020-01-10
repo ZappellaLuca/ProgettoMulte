@@ -4,8 +4,8 @@
  Gruppo: Zappella Luca, Livrieri Lorenzo, Savoldelli Dylan
  Classe ICT 2
  
- Programma visuale creata con SWING per far si che l'utente tramite un form inserisca: Nome, Cognome, Targa e scelga il varco dove ha preso la multa.
+ Programma visuale creata con SWING per far si che l'utente tramite un form inserisca: Nome, Cognome, Targa e scelga il varco dove ha      preso la multa.
 
- I dati saranno poi salvati su un database, creato con due car
+ I dati saranno poi salvati su un database(archivio_multe), creato con due tabelle: archivio_multe & lista_varchi
 
 
