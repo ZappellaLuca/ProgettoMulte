@@ -7,4 +7,3 @@ Programma visuale creata con SWING per far si che l'utente tramite un form inser
 
 I dati saranno poi salvati su un database(archivio_multe), creato con due tabelle: archivio_multe & lista_varchi
 
-Per inserire il db, scaricalo e vai su: C:\xampp\mysql\data
